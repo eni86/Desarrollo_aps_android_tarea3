@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_marginBottom="@dimen/activity_vertical_margin"
     card_view:cardCornerRadius="@dimen/corner_radious_cardview">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -24,13 +24,21 @@
             android:layout_height="wrap_content"
             android:text="@string/nombreMascota"
             android:textSize="@dimen/nombre_cardview"
+            android:layout_below="@+id/foto"
         />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@id/nombreMascota">
         <ImageButton
             android:id="@+id/btLike"
             android:layout_width="20dp"
             android:layout_height="20dp"
             app:src="@drawable/huesito_blanco"
             android:onClick="onBindViewHolder"
+
+
             >
         <TextView
             android:id="@+id/likesMascota"
@@ -38,12 +46,16 @@
             android:layout_height="wrap_content"
             android:text="@string/likesMascota"
             android:textSize="@dimen/descripcion_cardview"
+            android:layout_toLeftOf="@+id/likedMascota"
+
             />
-    </LinearLayout>
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/likedMascota"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/huesito_amarillo"
-            
+            android:layout_marginRight="0dp"
             />
+        </LinearLayout>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>
