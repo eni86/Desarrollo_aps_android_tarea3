@@ -11,14 +11,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.MascotaViewHolder>{
-    ArrayList<> mascotas;
+    ArrayList<Mascota> mascotas;
     public MascotaViewHolder onCreateViewHolder (ViewGroup parent, int viewType){
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview, parent, false);
         return new MascotaViewHolder(v);
     }
 
     public void onBindViewHolder (MascotaViewHolder holder, int position){
-        ArrayList<> mascota = mascotas.get(position);
+        Mascota mascota = mascotas.get(position);
         holder.fotoMascota.setImageResource(mascota.getFoto());
         holder.nombreMascota.setText(mascota.getNombre());
         holder.descripMascota.setText(mascota.getDescripcion());
