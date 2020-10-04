@@ -1,6 +1,7 @@
 package com.jenifer.desarrollo_aps_android_tarea3;
 
-public class Mascota {private String nombre;
+public class Mascota {
+    private String nombre;
     private String descripcion;
     private int foto;
 
