@@ -3,6 +3,7 @@ package com.jenifer.desarrollo_aps_android_tarea3;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,10 +19,25 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     }
 
     public void onBindViewHolder (MascotaViewHolder holder, int position){
-        Mascota mascota = mascotas.get(position);
+        final Mascota mascota = mascotas.get(position);
         holder.fotoMascota.setImageResource(mascota.getFoto());
         holder.nombreMascota.setText(mascota.getNombre());
-        holder.descripMascota.setText(mascota.getDescripcion());
+
+        holder.likeMascota.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int contador = mascota.getLike();
+                if (mascota.isLiked() == true ){
+                    mascota.setLike(contador - 1);
+                    mascota.setLiked(false);
+                } else{
+                    mascota.setLike(contador + 1);
+                    mascota.setLiked(true);
+                }
+                holder.likeMascota.setText(mascota.getLike());
+            }
+        });
+
 
     }
 
@@ -31,13 +47,13 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     public static class MascotaViewHolder  extends RecyclerView.ViewHolder {
         private ImageView fotoMascota;
         private TextView nombreMascota;
-        private TextView descripMascota;
+        private TextView likeMascota;
 
         public MascotaViewHolder (View itemView){
             super(itemView);
             fotoMascota = (ImageView) itemView.findViewById(R.id.foto);
             nombreMascota = (TextView) itemView.findViewById(R.id.nombreMascota);
-            descripMascota = (TextView) itemView.findViewById(R.id.descripcionMascota);
+            likeMascota = (ImageButton) itemView.findViewById(R.id.btLike);
 
         }
     }

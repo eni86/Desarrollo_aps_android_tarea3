@@ -12,6 +12,11 @@
         app:titleTextColor="@android:color/white"
         android:background="?attr/colorPrimary"
         >
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft ="0dp"
+            android:src="@drawable/icons8_hotel_96"
+            />
     </androidx.appcompat.widget.Toolbar>
 </androidx.constraintlayout.widget.ConstraintLayout>

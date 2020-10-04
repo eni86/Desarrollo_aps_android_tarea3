@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
     android:id="@+id/MascotaCV"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,13 +25,25 @@
             android:text="@string/nombreMascota"
             android:textSize="@dimen/nombre_cardview"
         />
+        <ImageButton
+            android:id="@+id/btLike"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:src="@drawable/huesito_blanco"
+            android:onClick="onBindViewHolder"
+            >
         <TextView
-            android:id="@+id/descripcionMascota"
+            android:id="@+id/likesMascota"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/descripcionMascota"
+            android:text="@string/likesMascota"
             android:textSize="@dimen/descripcion_cardview"
             />
     </LinearLayout>
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/huesito_amarillo"
+            
+            />
 </androidx.cardview.widget.CardView>

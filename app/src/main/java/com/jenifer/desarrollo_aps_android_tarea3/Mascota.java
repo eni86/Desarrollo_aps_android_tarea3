@@ -2,7 +2,17 @@ package com.jenifer.desarrollo_aps_android_tarea3;
 
 public class Mascota {
     private String nombre;
-    private String descripcion;
+    private int like;
+    private boolean liked = false;
+
+    public boolean isLiked() {
+        return liked;
+    }
+
+    public void setLiked(boolean liked) {
+        this.liked = liked;
+    }
+
     private int foto;
 
     public String getNombre() {
@@ -13,12 +23,12 @@ public class Mascota {
         this.nombre = nombre;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getLike() {
+        return like;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setLike(int like) {
+        this.like = like;
     }
 
     public int getFoto() {
