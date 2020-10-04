@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Lista5Mascotas"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MascotaAdaptador"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PAREN_ACTIVITY"
+                android:value=".MainAtivity"
+                ></meta-data>
 
+        </activity>
+        <activity android:name=".Lista5Mascotas"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PAREN_ACTIVITY"
+                android:value=".MainAtivity"
+                ></meta-data>
+
+        </activity>
     </application>
 
 </manifest>
