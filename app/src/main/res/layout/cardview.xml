@@ -55,6 +55,7 @@
             android:layout_height="20dp"
             android:src="@drawable/huesito_amarillo"
             android:layout_marginRight="0dp"
+            
             />
         </LinearLayout>
     </RelativeLayout>
