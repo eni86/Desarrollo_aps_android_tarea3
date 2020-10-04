@@ -11,7 +11,7 @@ public class Lista5Mascotas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista5_mascotas);
-        Toolbar miActionBar = (Toolbar) findViewById(R.id.actionBar);
-        setSupportActionBar(miActionBar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 }

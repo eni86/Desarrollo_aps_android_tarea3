@@ -47,7 +47,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     public static class MascotaViewHolder  extends RecyclerView.ViewHolder {
         private ImageView fotoMascota;
         private TextView nombreMascota;
-        private TextView likeMascota;
+        private ImageButton likeMascota;
 
         public MascotaViewHolder (View itemView){
             super(itemView);

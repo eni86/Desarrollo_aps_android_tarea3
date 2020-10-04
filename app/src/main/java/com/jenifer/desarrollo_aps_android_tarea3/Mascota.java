@@ -23,7 +23,7 @@ public class Mascota {
         this.nombre = nombre;
     }
 
-    public String getLike() {
+    public int getLike() {
         return like;
     }
 
@@ -39,9 +39,11 @@ public class Mascota {
         this.foto = foto;
     }
 
-    public Mascota (int foto, String nombre, String descripcion){
+    public Mascota (int foto, String nombre, int like, boolean liked){
         this.foto           = foto;
-        this.descripcion    = descripcion;
         this.nombre         = nombre;
+        this.like           = like;
+        this.liked          = liked;
+
     }
 }
