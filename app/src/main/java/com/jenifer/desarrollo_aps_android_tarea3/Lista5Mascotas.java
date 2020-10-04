@@ -3,6 +3,7 @@ package com.jenifer.desarrollo_aps_android_tarea3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toolbar;
 
 public class Lista5Mascotas extends AppCompatActivity {
 
@@ -10,5 +11,7 @@ public class Lista5Mascotas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista5_mascotas);
+        Toolbar miActionBar = (Toolbar) findViewById(R.id.actionBar);
+        setSupportActionBar(miActionBar);
     }
 }
