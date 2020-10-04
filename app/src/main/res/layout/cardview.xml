@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/MascotaCV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCornerRadius="@dimen/corner_radious_cardview">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id = "@+id/foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/cute_dog_headshot"
+         />
+        <TextView
+            android:id="@+id/nombreMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombreMascota"
+            android:textSize="@dimen/nombre_cardview"
+        />
+        <TextView
+            android:id="@+id/descripcionMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcionMascota"
+            android:textSize="@dimen/descripcion_cardview"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
