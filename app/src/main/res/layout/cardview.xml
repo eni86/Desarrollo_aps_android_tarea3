@@ -14,7 +14,7 @@
         >
         <ImageView
             android:id = "@+id/foto"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:src = "@drawable/cute_dog_headshot"
             android:scaleType="centerCrop"
