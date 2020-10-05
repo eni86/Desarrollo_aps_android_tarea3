@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         listaMascotas.setLayoutManager(llm);
 
         inicializarAdaptador();
-        
+
     }
 
     public void inicializarAdaptador(){
