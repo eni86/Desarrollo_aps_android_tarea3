@@ -29,7 +29,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
             @Override
             public void onClick(View v) {
                 int contador = mascota.getLike();
-                if (mascota.isLiked() == true ){
+                if (mascota.get(position).isLiked() == true ){
                     mascota.setLike(contador - 1);
                     mascota.setLiked(false);
                     Toast.makeText(Context.getApplicationContext(),R.string.dislike,Toast.LENGTH_SHORT).show;
