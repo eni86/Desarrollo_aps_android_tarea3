@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.content.Context;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -30,9 +32,11 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                 if (mascota.isLiked() == true ){
                     mascota.setLike(contador - 1);
                     mascota.setLiked(false);
+                    Toast.makeText(Context.getApplicationContext(),R.string.dislike,Toast.LENGTH_SHORT).show;
                 } else{
                     mascota.setLike(contador + 1);
                     mascota.setLiked(true);
+                    Toast.makeText(Context.getApplicationContext(),R.string.like,Toast.LENGTH_SHORT).show;
                 }
                 holder.likeMascota.setText(mascota.getLike());
             }

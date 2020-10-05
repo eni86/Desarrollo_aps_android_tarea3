@@ -10,8 +10,15 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
     ArrayList <Mascota> mascotas;
+
+    mascotas.add(new Mascota(R.drawable.cute_dog_headshot, "Toby",false, 15));
+    mascotas.add(new Mascota(R.drawable.perro2, "Hugo",true, 16));
+    mascotas.add(new Mascota(R.drawable.perro3, "Paco",false, 5));
+    mascotas.add(new Mascota(R.drawable.perro4, "Luis",true, 17));
+    mascotas.add(new Mascota(R.drawable.perro5, "Alvin",false, 20));
+    mascotas.add(new Mascota(R.drawable.perro6, "Simon",true, 12));
+    mascotas.add(new Mascota(R.drawable.perro7, "Theodore",true, 10));
     private RecyclerView listaMascotas;
 
     @Override
