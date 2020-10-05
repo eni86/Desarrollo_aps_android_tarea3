@@ -10,7 +10,7 @@ import android.widget.Toolbar;
 import java.util.ArrayList;
 
 public class Lista5Mascotas extends AppCompatActivity {
-    ArrayList <Mascota> mascotas;
+    ArrayList <Mascota> mascotas = new ArrayList<Mascota>();
 
     mascotas.add(new Mascota(R.drawable.cute_dog_headshot, "Toby",false, 15));
     mascotas.add(new Mascota(R.drawable.perro2, "Hugo",true, 16));
