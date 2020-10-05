@@ -18,14 +18,19 @@
             android:layout_height="wrap_content"
             android:src = "@drawable/cute_dog_headshot"
          />
+
+
         <TextView
             android:id="@+id/nombreMascota"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nombreMascota"
-            android:textSize="@dimen/nombre_cardview"
             android:layout_below="@+id/foto"
-        />
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/nombreMascota"
+            android:textSize="@dimen/nombre_cardview" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -37,26 +42,28 @@
             android:layout_height="20dp"
             app:src="@drawable/huesito_blanco"
             android:onClick="onBindViewHolder"
+           />
 
+            <TextView
+                android:id="@+id/likesMascota"
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/likedMascota"
+                android:gravity="right"
+                android:text="@string/likesMascota"
+                android:textSize="@dimen/descripcion_cardview"
 
-            />
-        <TextView
-            android:id="@+id/likesMascota"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/likesMascota"
-            android:textSize="@dimen/descripcion_cardview"
-            android:layout_toLeftOf="@+id/likedMascota"
+                />
 
-            />
-        <ImageView
-            android:id="@+id/likedMascota"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/huesito_amarillo"
-            android:layout_marginRight="0dp"
+            <ImageView
+                android:id="@+id/likedMascota"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/huesito_amarillo"
+                android:layout_toLeftOf="@+id/likesMascota"
 
-            />
+                />
         </LinearLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

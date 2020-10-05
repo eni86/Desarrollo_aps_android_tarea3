@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Desarrollo_aps_android_tarea3</string>
+    <string name="app_name">Petagram</string>
     <string name="nombreMascota">Mi mascota</string>
     <string name="likesMascota">Numero de likes</string>
 </resources>

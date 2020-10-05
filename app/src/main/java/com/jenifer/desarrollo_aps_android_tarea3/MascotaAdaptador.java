@@ -41,9 +41,8 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
     }
 
-    public int itemCount(){
-        return mascotas.size();
-    }
+
+
     public static class MascotaViewHolder  extends RecyclerView.ViewHolder {
         private ImageView fotoMascota;
         private TextView nombreMascota;
