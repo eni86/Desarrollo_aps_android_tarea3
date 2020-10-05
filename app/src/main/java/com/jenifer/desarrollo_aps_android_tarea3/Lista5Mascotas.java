@@ -7,8 +7,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.Toolbar;
 
-public class Lista5Mascotas extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class Lista5Mascotas extends AppCompatActivity {
+    ArrayList<Mascota> mascotas;
+    private RecyclerView listaMascotas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
