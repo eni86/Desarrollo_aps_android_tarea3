@@ -5,4 +5,5 @@
     <dimen name="nombre_cardview">20sp</dimen>
     <dimen name="descripcion_cardview">15sp</dimen>
     <dimen name="elevation_action_bar">4dp</dimen>
+    <dimen name="titulo_bar">20dp</dimen>
 </resources>

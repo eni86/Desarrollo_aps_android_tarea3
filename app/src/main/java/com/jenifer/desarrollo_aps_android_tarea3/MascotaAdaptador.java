@@ -32,11 +32,11 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                 if (mascota.isLiked() == true ){
                     mascota.setLike(contador - 1);
                     mascota.setLiked(false);
-                    Toast.makeText(Context.getApplicationContext(),R.string.dislike,Toast.LENGTH_SHORT).show;
+                    Toast.makeText(Context.getApplicationContext(),R.string.dislike,Toast.LENGTH_SHORT).show();
                 } else{
                     mascota.setLike(contador + 1);
                     mascota.setLiked(true);
-                    Toast.makeText(Context.getApplicationContext(),R.string.like,Toast.LENGTH_SHORT).show;
+                    Toast.makeText(Context.getApplicationContext(),R.string.like,Toast.LENGTH_SHORT).show();
                 }
                 holder.likeMascota.setText(mascota.getLike());
             }

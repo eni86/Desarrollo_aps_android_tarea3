@@ -12,9 +12,10 @@ import java.util.ArrayList;
 
 public class Lista5Mascotas extends AppCompatActivity {
 
-    @Override
     private ArrayList <Mascota> mascotas = new ArrayList<Mascota>();
     private RecyclerView listaMascotas;
+
+    @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +24,11 @@ public class Lista5Mascotas extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        mascotas.add(new Mascota(R.drawable.cute_dog_headshot, "Toby",false, 15));
-        mascotas.add(new Mascota(R.drawable.perro2, "Hugo",true, 16));
-        mascotas.add(new Mascota(R.drawable.perro3, "Paco",false, 5));
-        mascotas.add(new Mascota(R.drawable.perro4, "Luis",true, 17));
-        mascotas.add(new Mascota(R.drawable.perro5, "Alvin",false, 20));
+        mascotas.add(new Mascota(R.drawable.cute_dog_headshot, "Toby", 15,false));
+        mascotas.add(new Mascota(R.drawable.perro2, "Hugo", 16,true));
+        mascotas.add(new Mascota(R.drawable.perro3, "Paco", 5,false));
+        mascotas.add(new Mascota(R.drawable.perro4, "Luis", 17,true));
+        mascotas.add(new Mascota(R.drawable.perro5, "Alvin", 20,false));
 
         listaMascotas = (RecyclerView) findViewById(R.id.rv5Mascotas);
 
@@ -36,14 +37,10 @@ public class Lista5Mascotas extends AppCompatActivity {
         listaMascotas.setLayoutManager(llm);
         inicializarAdaptador();
 
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
-        finish();
 
        }
     private void inicializarAdaptador(){
         MascotaAdaptador adaptador = new MascotaAdaptador(mascotas);
-        listaMascotas.setAdapter(adaptador); MascotaAdaptador adaptador = new MascotaAdaptador(mascotas);
         listaMascotas.setAdapter(adaptador);
     }
 

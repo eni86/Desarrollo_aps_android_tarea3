@@ -24,16 +24,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.actionBar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-        mascotas.add(new Mascota(R.drawable.cute_dog_headshot, "Toby",false, 15));
-        mascotas.add(new Mascota(R.drawable.perro2, "Hugo",true, 16));
-        mascotas.add(new Mascota(R.drawable.perro3, "Paco",false, 5));
-        mascotas.add(new Mascota(R.drawable.perro4, "Luis",true, 17));
-        mascotas.add(new Mascota(R.drawable.perro5, "Alvin",false, 20));
-        mascotas.add(new Mascota(R.drawable.perro6, "Simon",true, 12));
-        mascotas.add(new Mascota(R.drawable.perro7, "Theodore",true, 10));
+        mascotas.add(new Mascota(R.drawable.cute_dog_headshot, "Toby", 15,false));
+        mascotas.add(new Mascota(R.drawable.perro2, "Hugo", 16,true));
+        mascotas.add(new Mascota(R.drawable.perro3, "Paco", 5,false));
+        mascotas.add(new Mascota(R.drawable.perro4, "Luis", 17,true));
+        mascotas.add(new Mascota(R.drawable.perro5, "Alvin", 20,false));
+        mascotas.add(new Mascota(R.drawable.perro6, "Simon", 12,true));
+        mascotas.add(new Mascota(R.drawable.perro7, "Theodore", 10,true));
 
 
 
@@ -43,15 +41,15 @@ public class MainActivity extends AppCompatActivity {
         listaMascotas.setLayoutManager(llm);
         inicializarAdaptador();
 
-        Intent i = new Intent(this, Lista5Mascotas.class);
-        startActivity(i);
-        finish();
 
     }
     private void inicializarAdaptador(){
         MascotaAdaptador adaptador = new MascotaAdaptador(mascotas);
-        listaMascotas.setAdapter(adaptador); MascotaAdaptador adaptador = new MascotaAdaptador(mascotas);
         listaMascotas.setAdapter(adaptador);
+    }
+    public void ir5mascoras(){
+        Intent i = new Intent(this, Lista5Mascotas.class);
+        startActivity(i);
     }
 
 

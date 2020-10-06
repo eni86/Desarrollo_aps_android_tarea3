@@ -17,17 +17,22 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/titulo_bar"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
-        <ImageView
-            android:src="@drawable/icons8_hotel_96"
+        <ImageButton
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:src="@drawable/icons8_hotel_48"
+            android:background="@color/colorTransparente"
             android:id="@+id/mascotasFav"
             android:layout_marginRight="11dp"
             android:layout_marginEnd="11dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
+            android:layout_alignParentEnd="true"
+            android:onClick="ir5mascoras"/>
 
     </RelativeLayout>
 
