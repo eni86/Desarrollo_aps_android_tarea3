@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ArrayList <Mascota> mascotas = new ArrayList<Mascota>();
+        private ArrayList <Mascota> mascotas = new ArrayList<Mascota>();
 
         mascotas.add(new Mascota(R.drawable.cute_dog_headshot, "Toby",false, 15));
         mascotas.add(new Mascota(R.drawable.perro2, "Hugo",true, 16));
