@@ -31,14 +31,13 @@ public class Lista5Mascotas extends AppCompatActivity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         listaMascotas.setLayoutManager(llm);
 
+
         MascotaAdaptador adaptador = new MascotaAdaptador(mascotas);
         listaMascotas.setAdapter(adaptador);
-    }
-
-
-
-
-}
 
     }
+
+
+
+
 }

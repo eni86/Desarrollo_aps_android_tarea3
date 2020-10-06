@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         MascotaAdaptador adaptador = new MascotaAdaptador(mascotas);
         listaMascotas.setAdapter(adaptador);
 
+
     }
 
 
