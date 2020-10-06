@@ -37,6 +37,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                     mascota.setLiked(true);
                 }
                 holder.likeMascota.setImageResource(mascota.getLike());
+                
             }
         });
 
