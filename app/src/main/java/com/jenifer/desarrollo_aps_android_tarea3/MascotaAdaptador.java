@@ -23,6 +23,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         final Mascota mascota = mascotas.get(position);
         holder.fotoMascota.setImageResource(mascota.getFoto());
         holder.nombreMascota.setText(mascota.getNombre());
+        holder.likeMascota.setImageResource(mascota.getLike());
 
         holder.likeMascota.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +36,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                     mascota.setLike(contador + 1);
                     mascota.setLiked(true);
                 }
-                holder.likeMascota.setImageResource(mascota.getLike());
+                holder.likesMascota.setText(mascota.getLike());
 
             }
         });
@@ -49,13 +50,14 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         private ImageView fotoMascota;
         private TextView nombreMascota;
         private ImageButton likeMascota;
+        private TextView likesMascota;
 
         public MascotaViewHolder (View itemView){
             super(itemView);
             fotoMascota = (ImageView) itemView.findViewById(R.id.foto);
             nombreMascota = (TextView) itemView.findViewById(R.id.nombreMascota);
             likeMascota = (ImageButton) itemView.findViewById(R.id.btLike);
-
+            likesMascota = (TextView) itemView.findViewById(R.id.likesMascota);
         }
     }
     @Override
