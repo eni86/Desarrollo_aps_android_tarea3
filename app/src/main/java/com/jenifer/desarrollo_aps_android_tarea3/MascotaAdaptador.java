@@ -1,6 +1,5 @@
 package com.jenifer.desarrollo_aps_android_tarea3;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
