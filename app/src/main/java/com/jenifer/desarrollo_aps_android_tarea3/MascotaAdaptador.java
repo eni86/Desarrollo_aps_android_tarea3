@@ -64,6 +64,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         return mascotas.size();
     }
 
+    public MascotaAdaptador(){}
     public MascotaAdaptador (ArrayList <Mascota> mascotas){
         this.mascotas = mascotas;
     }

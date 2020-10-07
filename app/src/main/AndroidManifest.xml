@@ -16,14 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MascotaAdaptador"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PAREN_ACTIVITY"
-                android:value=".MainAtivity"
-                ></meta-data>
 
-        </activity>
         <activity android:name=".Lista5Mascotas"
             android:parentActivityName=".MainActivity">
             <meta-data
